@@ -14,6 +14,7 @@
 		5191A9041ED673DA004B5B71 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9021ED673DA004B5B71 /* iOS.xcdatamodeld */; };
 		5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9051ED673DA004B5B71 /* Assets.xcassets */; };
 		5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */; };
+		5191A9191ED68E9E004B5B71 /* timg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9181ED68E9E004B5B71 /* timg.png */; };
 		DD12E30B0229158D0D380B0C /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65406C27202FA702412676BA /* libPods-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		5191A9081ED673DA004B5B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5191A90A1ED673DA004B5B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5191A9131ED67734004B5B71 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		5191A9181ED68E9E004B5B71 /* timg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg.png; sourceTree = "<group>"; };
 		65406C27202FA702412676BA /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC2C5A60D1D92CCFF92B5 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		5191A8F51ED673D9004B5B71 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5191A9181ED68E9E004B5B71 /* timg.png */,
 				5191A9131ED67734004B5B71 /* HeaderFile.h */,
 				5191A8F91ED673D9004B5B71 /* AppDelegate.h */,
 				5191A8FA1ED673DA004B5B71 /* AppDelegate.m */,
@@ -170,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5191A9191ED68E9E004B5B71 /* timg.png in Resources */,
 				5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */,
 				5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */,
 				5191A9011ED673DA004B5B71 /* Main.storyboard in Resources */,
