@@ -35,6 +35,8 @@
 //    NSString *bodys = @"";
 //    
 //    [[AFHTTPSessionManager manager].requestSerializer setValue:appcode forHTTPHeaderField:@"token"];//设置请求Header
+    
+//    NSString *url = @"http://www.myapi.com:8888/index.php";
 //    [[AFHTTPSessionManager manager] GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        if (responseObject) {
 //            
@@ -43,10 +45,36 @@
 //        
 //    }];
     
-   
+    [self testPhpApi];
     
 }
-
+- (void)testPhpApi{
+    NSString *appcode = @"011e0979c77e4758a5d27aecab9c3484";
+    NSString *host = @"http://jisuxhdq.market.alicloudapi.com";
+    NSString *path = @"/xiaohua/text";
+    NSString *method = @"GET";
+    NSString *querys = @"?pagesize=5&sort=addtime";
+    NSString *pagenum = [NSString stringWithFormat:@"pagenum=%@",@"abc"];
+//    NSString *url = [NSString stringWithFormat:@"%@%@%@&%@",  host,  path , querys, pagenum];
+    NSString *url = @"http://www.myapi.com:8888/index.php";
+    NSString *bodys = @"";
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]  cachePolicy:1  timeoutInterval:  5];
+    request.HTTPMethod  =  method;
+    [request addValue:  [NSString  stringWithFormat:@"APPCODE %@" ,  appcode]  forHTTPHeaderField:  @"Authorization"];
+    NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request
+                                                   completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                                                       NSLog(@"Response object: %@" , response);
+                                                       NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
+                                                       
+                                                       //打印应答中的body
+                                                       NSLog(@"Response body: %@" , bodyString);
+                                                       NSLog(@"json %@",body.jsonValueDecoded);
+                                                   }];
+    
+    [task resume];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
