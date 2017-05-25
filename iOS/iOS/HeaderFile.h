@@ -14,6 +14,7 @@
 #import <YYKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "AFNetworking.h"
+#import "Request.h"
 
 #endif
 #endif /* HeaderFile_h */

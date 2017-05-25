@@ -15,6 +15,12 @@
 		5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9051ED673DA004B5B71 /* Assets.xcassets */; };
 		5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */; };
 		5191A9191ED68E9E004B5B71 /* timg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9181ED68E9E004B5B71 /* timg.png */; };
+		5191A91C1ED69503004B5B71 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A91B1ED69503004B5B71 /* CollectionViewController.m */; };
+		5191A91F1ED6A422004B5B71 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */; };
+		5191A9251ED6AFA7004B5B71 /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */; };
+		5191A9281ED6BE42004B5B71 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9271ED6BE42004B5B71 /* Request.m */; };
+		5191A92C1ED6CD07004B5B71 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A92A1ED6CD07004B5B71 /* WebViewController.m */; };
+		5191A92D1ED6CD07004B5B71 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5191A92B1ED6CD07004B5B71 /* WebViewController.xib */; };
 		DD12E30B0229158D0D380B0C /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65406C27202FA702412676BA /* libPods-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,17 @@
 		5191A90A1ED673DA004B5B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5191A9131ED67734004B5B71 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
 		5191A9181ED68E9E004B5B71 /* timg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg.png; sourceTree = "<group>"; };
+		5191A91A1ED69503004B5B71 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		5191A91B1ED69503004B5B71 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		5191A91D1ED6A422004B5B71 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5191A9231ED6AFA7004B5B71 /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
+		5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
+		5191A9261ED6BE42004B5B71 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		5191A9271ED6BE42004B5B71 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		5191A9291ED6CD07004B5B71 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5191A92A1ED6CD07004B5B71 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5191A92B1ED6CD07004B5B71 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		65406C27202FA702412676BA /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC2C5A60D1D92CCFF92B5 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +93,18 @@
 				5191A8FA1ED673DA004B5B71 /* AppDelegate.m */,
 				5191A8FC1ED673DA004B5B71 /* ViewController.h */,
 				5191A8FD1ED673DA004B5B71 /* ViewController.m */,
+				5191A9291ED6CD07004B5B71 /* WebViewController.h */,
+				5191A92A1ED6CD07004B5B71 /* WebViewController.m */,
+				5191A92B1ED6CD07004B5B71 /* WebViewController.xib */,
 				5191A8FF1ED673DA004B5B71 /* Main.storyboard */,
+				5191A91A1ED69503004B5B71 /* CollectionViewController.h */,
+				5191A91B1ED69503004B5B71 /* CollectionViewController.m */,
+				5191A91D1ED6A422004B5B71 /* CollectionViewCell.h */,
+				5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */,
+				5191A9231ED6AFA7004B5B71 /* ContentCollectionViewCell.h */,
+				5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */,
+				5191A9261ED6BE42004B5B71 /* Request.h */,
+				5191A9271ED6BE42004B5B71 /* Request.m */,
 				5191A9051ED673DA004B5B71 /* Assets.xcassets */,
 				5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */,
 				5191A90A1ED673DA004B5B71 /* Info.plist */,
@@ -176,6 +204,7 @@
 				5191A9191ED68E9E004B5B71 /* timg.png in Resources */,
 				5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */,
 				5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */,
+				5191A92D1ED6CD07004B5B71 /* WebViewController.xib in Resources */,
 				5191A9011ED673DA004B5B71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,9 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5191A9251ED6AFA7004B5B71 /* ContentCollectionViewCell.m in Sources */,
+				5191A91F1ED6A422004B5B71 /* CollectionViewCell.m in Sources */,
 				5191A8FE1ED673DA004B5B71 /* ViewController.m in Sources */,
 				5191A8FB1ED673DA004B5B71 /* AppDelegate.m in Sources */,
+				5191A92C1ED6CD07004B5B71 /* WebViewController.m in Sources */,
 				5191A8F81ED673D9004B5B71 /* main.m in Sources */,
+				5191A9281ED6BE42004B5B71 /* Request.m in Sources */,
+				5191A91C1ED69503004B5B71 /* CollectionViewController.m in Sources */,
 				5191A9041ED673DA004B5B71 /* iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

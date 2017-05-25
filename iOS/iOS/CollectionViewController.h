@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CollectionViewController.h
 //  iOS
 //
 //  Created by liang on 2017/5/25.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
-
+@interface CollectionViewController : UICollectionViewController
 
 @end
-
