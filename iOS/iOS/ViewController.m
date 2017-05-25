@@ -23,7 +23,6 @@
     [imageView setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [imageView setFrame:self.view.frame];
-    [imageView.layer setCornerRadius:8];
     [self.view addSubview:imageView];
     
     
