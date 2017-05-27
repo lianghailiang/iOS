@@ -7,49 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518E155C1ED7FBCA00407E22 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E154C1ED7FBCA00407E22 /* CollectionViewCell.m */; };
+		518E155D1ED7FBCA00407E22 /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E154E1ED7FBCA00407E22 /* ContentCollectionViewCell.m */; };
+		518E155F1ED7FBCA00407E22 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E15531ED7FBCA00407E22 /* Request.m */; };
+		518E15601ED7FBCA00407E22 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E15561ED7FBCA00407E22 /* CollectionViewController.m */; };
+		518E15611ED7FBCA00407E22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E15581ED7FBCA00407E22 /* ViewController.m */; };
+		518E15661ED7FC9400407E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E15641ED7FC9400407E22 /* Main.storyboard */; };
+		518E156A1ED7FF5C00407E22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E15691ED7FF5C00407E22 /* AppDelegate.m */; };
 		5191A8F81ED673D9004B5B71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A8F71ED673D9004B5B71 /* main.m */; };
-		5191A8FB1ED673DA004B5B71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A8FA1ED673DA004B5B71 /* AppDelegate.m */; };
-		5191A8FE1ED673DA004B5B71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A8FD1ED673DA004B5B71 /* ViewController.m */; };
-		5191A9011ED673DA004B5B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191A8FF1ED673DA004B5B71 /* Main.storyboard */; };
 		5191A9041ED673DA004B5B71 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9021ED673DA004B5B71 /* iOS.xcdatamodeld */; };
 		5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9051ED673DA004B5B71 /* Assets.xcassets */; };
 		5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */; };
-		5191A9191ED68E9E004B5B71 /* timg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9181ED68E9E004B5B71 /* timg.png */; };
-		5191A91C1ED69503004B5B71 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A91B1ED69503004B5B71 /* CollectionViewController.m */; };
-		5191A91F1ED6A422004B5B71 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */; };
-		5191A9251ED6AFA7004B5B71 /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */; };
-		5191A9281ED6BE42004B5B71 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9271ED6BE42004B5B71 /* Request.m */; };
-		5191A92C1ED6CD07004B5B71 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191A92A1ED6CD07004B5B71 /* WebViewController.m */; };
-		5191A92D1ED6CD07004B5B71 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5191A92B1ED6CD07004B5B71 /* WebViewController.xib */; };
 		DD12E30B0229158D0D380B0C /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65406C27202FA702412676BA /* libPods-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B75A1456BF85300B53E27AA /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		518E154B1ED7FBCA00407E22 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		518E154C1ED7FBCA00407E22 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		518E154D1ED7FBCA00407E22 /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
+		518E154E1ED7FBCA00407E22 /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
+		518E15521ED7FBCA00407E22 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		518E15531ED7FBCA00407E22 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		518E15551ED7FBCA00407E22 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		518E15561ED7FBCA00407E22 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		518E15571ED7FBCA00407E22 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		518E15581ED7FBCA00407E22 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		518E15651ED7FC9400407E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		518E15671ED7FD0900407E22 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		518E15681ED7FF5C00407E22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		518E15691ED7FF5C00407E22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5191A8F31ED673D9004B5B71 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5191A8F71ED673D9004B5B71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5191A8F91ED673D9004B5B71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5191A8FA1ED673DA004B5B71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5191A8FC1ED673DA004B5B71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5191A8FD1ED673DA004B5B71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5191A9001ED673DA004B5B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5191A9031ED673DA004B5B71 /* iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS.xcdatamodel; sourceTree = "<group>"; };
 		5191A9051ED673DA004B5B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5191A9081ED673DA004B5B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5191A90A1ED673DA004B5B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5191A9131ED67734004B5B71 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
-		5191A9181ED68E9E004B5B71 /* timg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg.png; sourceTree = "<group>"; };
-		5191A91A1ED69503004B5B71 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		5191A91B1ED69503004B5B71 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		5191A91D1ED6A422004B5B71 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		5191A9231ED6AFA7004B5B71 /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
-		5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
-		5191A9261ED6BE42004B5B71 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
-		5191A9271ED6BE42004B5B71 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
-		5191A9291ED6CD07004B5B71 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		5191A92A1ED6CD07004B5B71 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		5191A92B1ED6CD07004B5B71 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		65406C27202FA702412676BA /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC2C5A60D1D92CCFF92B5 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +59,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518E154A1ED7FBCA00407E22 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				518E154B1ED7FBCA00407E22 /* CollectionViewCell.h */,
+				518E154C1ED7FBCA00407E22 /* CollectionViewCell.m */,
+				518E154D1ED7FBCA00407E22 /* ContentCollectionViewCell.h */,
+				518E154E1ED7FBCA00407E22 /* ContentCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		518E15511ED7FBCA00407E22 /* PublicClasss */ = {
+			isa = PBXGroup;
+			children = (
+				518E15671ED7FD0900407E22 /* HeaderFile.h */,
+				518E15521ED7FBCA00407E22 /* Request.h */,
+				518E15531ED7FBCA00407E22 /* Request.m */,
+			);
+			path = PublicClasss;
+			sourceTree = "<group>";
+		};
+		518E15541ED7FBCA00407E22 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				518E15551ED7FBCA00407E22 /* CollectionViewController.h */,
+				518E15561ED7FBCA00407E22 /* CollectionViewController.m */,
+				518E15571ED7FBCA00407E22 /* ViewController.h */,
+				518E15581ED7FBCA00407E22 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		5191A8EA1ED673D9004B5B71 = {
 			isa = PBXGroup;
 			children = (
@@ -87,28 +112,13 @@
 		5191A8F51ED673D9004B5B71 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5191A9181ED68E9E004B5B71 /* timg.png */,
-				5191A9131ED67734004B5B71 /* HeaderFile.h */,
-				5191A8F91ED673D9004B5B71 /* AppDelegate.h */,
-				5191A8FA1ED673DA004B5B71 /* AppDelegate.m */,
-				5191A8FC1ED673DA004B5B71 /* ViewController.h */,
-				5191A8FD1ED673DA004B5B71 /* ViewController.m */,
-				5191A9291ED6CD07004B5B71 /* WebViewController.h */,
-				5191A92A1ED6CD07004B5B71 /* WebViewController.m */,
-				5191A92B1ED6CD07004B5B71 /* WebViewController.xib */,
-				5191A8FF1ED673DA004B5B71 /* Main.storyboard */,
-				5191A91A1ED69503004B5B71 /* CollectionViewController.h */,
-				5191A91B1ED69503004B5B71 /* CollectionViewController.m */,
-				5191A91D1ED6A422004B5B71 /* CollectionViewCell.h */,
-				5191A91E1ED6A422004B5B71 /* CollectionViewCell.m */,
-				5191A9231ED6AFA7004B5B71 /* ContentCollectionViewCell.h */,
-				5191A9241ED6AFA7004B5B71 /* ContentCollectionViewCell.m */,
-				5191A9261ED6BE42004B5B71 /* Request.h */,
-				5191A9271ED6BE42004B5B71 /* Request.m */,
+				518E15681ED7FF5C00407E22 /* AppDelegate.h */,
+				518E15691ED7FF5C00407E22 /* AppDelegate.m */,
 				5191A9051ED673DA004B5B71 /* Assets.xcassets */,
-				5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */,
-				5191A90A1ED673DA004B5B71 /* Info.plist */,
-				5191A9021ED673DA004B5B71 /* iOS.xcdatamodeld */,
+				518E15641ED7FC9400407E22 /* Main.storyboard */,
+				518E154A1ED7FBCA00407E22 /* Cell */,
+				518E15511ED7FBCA00407E22 /* PublicClasss */,
+				518E15541ED7FBCA00407E22 /* ViewController */,
 				5191A8F61ED673D9004B5B71 /* Supporting Files */,
 			);
 			path = iOS;
@@ -117,6 +127,9 @@
 		5191A8F61ED673D9004B5B71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5191A90A1ED673DA004B5B71 /* Info.plist */,
+				5191A9021ED673DA004B5B71 /* iOS.xcdatamodeld */,
+				5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */,
 				5191A8F71ED673D9004B5B71 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -201,11 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5191A9191ED68E9E004B5B71 /* timg.png in Resources */,
+				518E15661ED7FC9400407E22 /* Main.storyboard in Resources */,
 				5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */,
 				5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */,
-				5191A92D1ED6CD07004B5B71 /* WebViewController.xib in Resources */,
-				5191A9011ED673DA004B5B71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,25 +275,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5191A9251ED6AFA7004B5B71 /* ContentCollectionViewCell.m in Sources */,
-				5191A91F1ED6A422004B5B71 /* CollectionViewCell.m in Sources */,
-				5191A8FE1ED673DA004B5B71 /* ViewController.m in Sources */,
-				5191A8FB1ED673DA004B5B71 /* AppDelegate.m in Sources */,
-				5191A92C1ED6CD07004B5B71 /* WebViewController.m in Sources */,
+				518E155D1ED7FBCA00407E22 /* ContentCollectionViewCell.m in Sources */,
+				518E15601ED7FBCA00407E22 /* CollectionViewController.m in Sources */,
+				518E15611ED7FBCA00407E22 /* ViewController.m in Sources */,
+				518E155C1ED7FBCA00407E22 /* CollectionViewCell.m in Sources */,
+				518E156A1ED7FF5C00407E22 /* AppDelegate.m in Sources */,
 				5191A8F81ED673D9004B5B71 /* main.m in Sources */,
-				5191A9281ED6BE42004B5B71 /* Request.m in Sources */,
-				5191A91C1ED69503004B5B71 /* CollectionViewController.m in Sources */,
 				5191A9041ED673DA004B5B71 /* iOS.xcdatamodeld in Sources */,
+				518E155F1ED7FBCA00407E22 /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5191A8FF1ED673DA004B5B71 /* Main.storyboard */ = {
+		518E15641ED7FC9400407E22 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5191A9001ED673DA004B5B71 /* Base */,
+				518E15651ED7FC9400407E22 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
