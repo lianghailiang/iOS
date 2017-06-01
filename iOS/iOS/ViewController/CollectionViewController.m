@@ -62,7 +62,11 @@
         NSNumber *code = [dic objectForKey:@"code"];
         if (code.integerValue == 200) {
             _imageList = [dic objectForKey:@"list"];
-            [self.collectionView reloadData];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                
+                [self.collectionView reloadData];
+                
+            });
         }
     }];
     [task resume];
