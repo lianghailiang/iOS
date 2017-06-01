@@ -12,7 +12,7 @@
 #import "ContentCollectionViewCell.h"
 
 @interface CollectionViewController ()
-
+@property (nonatomic, strong) NSMutableArray *imageList;
 @end
 
 @implementation CollectionViewController
@@ -20,21 +20,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *url = @"http://169.254.138.224:8888/";
-    [Request get:url parameters:nil hud:YES success:^(id responseObject) {
-        NSLog(@"%@",responseObject);
-        if (responseObject) {
-            
-        }
-    }];
+    NSString *url = @"http://192.168.1.108:8888/insert.php";
+//    [Request get:url parameters:nil hud:YES success:^(id responseObject) {
+//        NSLog(@"%@",responseObject);
+//        if (responseObject) {
+//            
+//        }
+//    }];
     
-//    [self testPhpApi:url];
+    [self testPhpApi:url];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testPhpApi:(NSString *)url{
+    
+    NSString *method = @"GET";
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:1  timeoutInterval:20];
+    request.HTTPMethod = method;
+    NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"Response object: %@" , response);
+        if (!body) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+            [self presentViewController:alert animated:YES completion:nil];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alert addAction:action];
+            return;
+        }
+//        NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
+        
+        //打印应答中的body
+//        NSLog(@"Response body: %@" , bodyString);
+//        NSLog(@"json %@",body.jsonValueDecoded);
+        if (!_imageList) {
+            _imageList = [NSMutableArray new];
+        }
+        NSDictionary *dic = body.jsonValueDecoded;
+        NSNumber *code = [dic objectForKey:@"code"];
+        if (code.integerValue == 200) {
+            _imageList = [dic objectForKey:@"list"];
+            [self.collectionView reloadData];
+        }
+    }];
+    [task resume];
 }
 
 #pragma mark <UICollectionViewDelegateFlowLayout>
@@ -62,7 +93,7 @@
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1+20;
+    return _imageList.count;
 }
 
 
@@ -80,30 +111,10 @@
         return cell;
     }else{
         ContentCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"contentId" forIndexPath:indexPath];
-        switch (indexPath.section) {
-            case 0:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"http://cnews.chinadaily.com.cn/img/attachement/jpg/site1/20170525/d8cb8a14fb901a90b9b21a.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-            case 1:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703813161&di=b81743d6ab7baa56f9838568c6f8a41d&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F35a85edf8db1cb13d30ef66fdb54564e92584b63.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-            case 2:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703813162&di=aa1c15ee4cf66a1a260617d939a19b30&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F6f061d950a7b020807c1ac6162d9f2d3572cc822.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-            case 3:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703813162&di=091538f9f830c84af30d3fec93fbc46e&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201605%2F11%2F163024s5l5h5l3rzl3qn13.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-            case 4:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703813163&di=9c9882efc3f2bab123629b8e6c0e2217&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201409%2F16%2F20140916193506_mGUPs.jpeg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-            case 5:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703775690&di=66319e5dda7751c684bed26dd73e9a32&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F0eb30f2442a7d9337afbe24aa94bd11373f001b3.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-                
-            default:
-                [cell.content_img setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495703813160&di=0fb14205108c5809b3fcd31936a21894&imgtype=0&src=http%3A%2F%2Fwww.bz55.com%2Fuploads%2Fallimg%2F120712%2F1-120G2104G9.jpg"] options:YYWebImageOptionProgressiveBlur];
-                break;
-        }
+        
+        NSDictionary *dic = [_imageList objectAtIndex:indexPath.section];
+        [cell.content_img setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"url"]] options:YYWebImageOptionProgressiveBlur];
+
         return cell;
     }
 }
@@ -139,22 +150,6 @@
 }
 */
 
-- (void)testPhpApi:(NSString *)url{
-    
-    NSString *method = @"GET";
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:1  timeoutInterval:20];
-    request.HTTPMethod = method;
-    NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"Response object: %@" , response);
-        NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
-        
-        //打印应答中的body
-        NSLog(@"Response body: %@" , bodyString);
-        NSLog(@"json %@",body.jsonValueDecoded);
-    }];
-    [task resume];
-}
+
 
 @end
