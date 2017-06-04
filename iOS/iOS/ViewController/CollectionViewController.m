@@ -20,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *url = @"http://192.168.1.108:8888/insert.php";
+//    NSString *url = @"http://120.77.147.252/app/test.php";
+    NSString *url = @"http://localhost:8888/db.php";
+    
 //    [Request get:url parameters:nil hud:YES success:^(id responseObject) {
 //        NSLog(@"%@",responseObject);
 //        if (responseObject) {
@@ -50,17 +52,17 @@
             [alert addAction:action];
             return;
         }
-//        NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
         
         //打印应答中的body
-//        NSLog(@"Response body: %@" , bodyString);
-//        NSLog(@"json %@",body.jsonValueDecoded);
+        NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
+        NSLog(@"Response body: %@" , bodyString);
+        NSLog(@"json %@",body.jsonValueDecoded);
         if (!_imageList) {
             _imageList = [NSMutableArray new];
         }
         NSDictionary *dic = body.jsonValueDecoded;
         NSNumber *code = [dic objectForKey:@"code"];
-        if (code.integerValue == 200) {
+        if (code.integerValue == 200 && dic) {
             _imageList = [dic objectForKey:@"list"];
             dispatch_sync(dispatch_get_main_queue(), ^{
                 

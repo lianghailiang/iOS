@@ -18,6 +18,8 @@
 		5191A9041ED673DA004B5B71 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5191A9021ED673DA004B5B71 /* iOS.xcdatamodeld */; };
 		5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9051ED673DA004B5B71 /* Assets.xcassets */; };
 		5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191A9071ED673DA004B5B71 /* LaunchScreen.storyboard */; };
+		B0ECFA591EE4519600957625 /* db.php in Resources */ = {isa = PBXBuildFile; fileRef = B0ECFA571EE4519600957625 /* db.php */; };
+		B0ECFA5A1EE4519600957625 /* index.php in Resources */ = {isa = PBXBuildFile; fileRef = B0ECFA581EE4519600957625 /* index.php */; };
 		DD12E30B0229158D0D380B0C /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65406C27202FA702412676BA /* libPods-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		5191A90A1ED673DA004B5B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65406C27202FA702412676BA /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCDC2C5A60D1D92CCFF92B5 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B0ECFA571EE4519600957625 /* db.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = db.php; sourceTree = "<group>"; };
+		B0ECFA581EE4519600957625 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		5191A8F51ED673D9004B5B71 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B0ECFA561EE4519600957625 /* www */,
 				518E15681ED7FF5C00407E22 /* AppDelegate.h */,
 				518E15691ED7FF5C00407E22 /* AppDelegate.m */,
 				5191A9051ED673DA004B5B71 /* Assets.xcassets */,
@@ -133,6 +138,15 @@
 				5191A8F71ED673D9004B5B71 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0ECFA561EE4519600957625 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECFA571EE4519600957625 /* db.php */,
+				B0ECFA581EE4519600957625 /* index.php */,
+			);
+			path = www;
 			sourceTree = "<group>";
 		};
 		EC64BDE5C2BFE1BC0BF93805 /* Frameworks */ = {
@@ -216,6 +230,8 @@
 			files = (
 				518E15661ED7FC9400407E22 /* Main.storyboard in Resources */,
 				5191A9091ED673DA004B5B71 /* LaunchScreen.storyboard in Resources */,
+				B0ECFA5A1EE4519600957625 /* index.php in Resources */,
+				B0ECFA591EE4519600957625 /* db.php in Resources */,
 				5191A9061ED673DA004B5B71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
